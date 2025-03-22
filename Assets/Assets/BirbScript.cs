@@ -16,6 +16,10 @@ public class BirbScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        myRigidbody.velocity = Vector2.up*10; //Vector2.up is shorthand for (0,1) this means making the bird go up in Y-axis
+        //Only move the bird up after hitting space button
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            myRigidbody.velocity = Vector2.up*10; //Vector2.up is shorthand for (0,1) this means making the bird go up in Y-axis
+        }
     }
 }
