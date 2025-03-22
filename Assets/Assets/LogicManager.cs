@@ -9,9 +9,9 @@ public class LogicManager : MonoBehaviour
     public Text scoreText;
 
     [ContextMenu("Increase Score")]
-    public void addScore()
+    public void addScore(int score)
     {
-        playerScore++;
+        playerScore += score;
         scoreText.text = playerScore.ToString();
     }
 }
