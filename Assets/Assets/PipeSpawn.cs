@@ -9,6 +9,7 @@ public class PipeSpawn : MonoBehaviour
 
     public float spawnrate = 2;
     private float timer = 0;
+    public float heightOffset = 10;
 
     // Start is called before the first frame update
     void Start()
@@ -32,7 +33,9 @@ public class PipeSpawn : MonoBehaviour
 
     void spawnPipe()
     {
+        float lowestpoint = transform.position.y - heightOffset;
+        float highestpoint = transform.position.y + heightOffset;
         //Spawn the pipe using instantiate
-        Instantiate(pipe, transform.position, transform.rotation);
+        Instantiate(pipe, new Vector3(transform.position.x,Random.Range(lowestpoint,highestpoint),0), transform.rotation);
     }
 }
