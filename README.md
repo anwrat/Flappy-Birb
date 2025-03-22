@@ -1,5 +1,21 @@
 # Flappy-Bird
-A remake of the classic flappy bird in Unity<br><br>
+A remake of the classic flappy bird in Unity<br>
+
+All thanks to the wonderful tutorial by Game Maker's ToolKit.<br>
+https://www.youtube.com/watch?v=XtQMytORBmM
+<br>
+
+---
+## Current Game<br><br>
+<img width="1279" alt="game1ss" src="https://github.com/user-attachments/assets/bf47b8bf-52a1-4060-86b4-bb312ee89867" />
+<br><br>
+
+## Next Steps to be done in the game's development <br>
+1. Add logic to terminate game when bird falls off the screen<br>
+2. Add sound, music<br>
+3. Add a start game screen lol<br>
+4. Add clouds to the scene and wing animation<br>
+5. Add some unique features to the game<br>
 
 ---
 
