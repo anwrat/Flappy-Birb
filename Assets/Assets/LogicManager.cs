@@ -8,6 +8,7 @@ public class LogicManager : MonoBehaviour
 {
     public int playerScore;
     public Text scoreText;
+    public GameObject gameoverscreen;
 
     [ContextMenu("Increase Score")]
     public void addScore(int score)
@@ -19,5 +20,10 @@ public class LogicManager : MonoBehaviour
     public void restartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void GameOver()
+    {
+        gameoverscreen.SetActive(true);
     }
 }
